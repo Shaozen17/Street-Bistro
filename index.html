@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Street Bistro</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+</div>
+<div class="sidebar">
+  <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+ <h1 class="sidebar-logo">Street Bistro</h1>
+
+ <div class="sidebar-menu">
+    <a href="#menu">Menu</a>
+    <a href="#order">Order</a>
+    <a href="#settings"> Settings</a>
+ </div>
+ <div class="login-container">
+  <div class="login-box">
+  <h2>Login</h2>
+  <form action="/login" method="post">
+  <div class="input-group">
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
+  </div>
+  <div class="input-group">
+  <label for="password">Password</label>
+  <input type="password" id="password" name="password" required>
+  </div>
+  <button type="submit" class="login-button">Login</button>
+  <div class="register-link">
+  <p>Don't have an account? <a href="/register">Register here</a></p>
+  </div>
+  </form>
+  </div>
+  </div>
+</div>
+<nav>
+<ul>
+  <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id="home" class="hero">
+<h2>Welcome to Street Bistro</h2>
+<p>Real Food made Real Good!</p>
+</section>
+<section id="menu" class="menu">
+<h2>Our Menu</h2>
+<div class="menu-items">
+<div class="menu-item">
+<img src="Kota&Coke.jpeg" alt="Kota&Coke">
+<h3>Russian, Vienna & Cheese Kota with Coke</h3>
+<p>R60,00</p>
+<button type="Cart">Add to cart</button>
+</div>
+<div class="menu-item">
+<img src="Rib Kota&Lemonade.jpeg" alt="Rib Kota&Lemonade">
+<h3>Rib & Cheese Kota with Lemonade</h3>
+<p>R65,00</p>
+<button type="Cart">Add to cart</button>
+</div>
+<div class="menu-item">
+<img src="Meat Platter.jpeg" alt="Meat Platter">
+<h3>Meat Platter ( for 4)</h3>
+<p>R250</p>
+<button type="Cart">Add to cart</button>
+</div>
+<div class="menu-item">
+    <img src="Vegan Platter.jpeg" alt="Vegan Platter">
+    <h3>Vegan Platter ( for 4)</h3>
+    <p>R200</p>
+    <button type="Cart">Add to cart</button>
+    <div class="menu-item">
+        <img src="Wings&Chips.jpeg" alt="wings & Chips">
+        <h3>12 Wings & Chips</h3>
+        <p>R160</p>
+        <button type="Cart">Add to cart</button>
+    </div>
+    <div class="menu-item">
+    <img src="Wrap&Chips.jpeg" alt="Wrap & Chips">
+    <h3>Wrap & Chips</h3>
+    <p>R50</p>
+    <button type="Cart">Add to cart</button>
+  <div class="menu-item">
+    <img src="Bacon&Wors Roll.jpeg" alt="Bacon & Wors Roll">
+    <h3>Bacon & Wors Roll</h3>
+    <p>R40</p>
+    <button type="Cart">Add to cart</button>
+  </div>
+  <div class="profile">
+    <a class="order" href="#"><icon-icon name="order-outline"></icon-icon></a>
+    <a class="user" href="#"><icon-icon name="user-outline"></icon-icon></a>
+  </div>
+</div>
+</section>
+<section id="about" class="about">
+<h2>About Us</h2>
+<p>Street Bistro is a kasi-flavoured restaurant offering delicious meals and quick delivery services. Our chefs use the freshest ingredients to create mouth-watering dishes that will make you come back for more!</p>
+</section>
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<form action="#">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<label for="message">Message:</label>
+<textarea id="message" name="message" required></textarea>
+<button type="submit">Send</button>
+</form>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2024 Street Bistro. All rights reserved.</p>
+</footer>
+    </div>
+  </div>
+</div> 
+<script src="scripts.js"></script>
+
+<script>
+  function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+  }
+  function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+  }
+</script>
+</body>
+</html>
